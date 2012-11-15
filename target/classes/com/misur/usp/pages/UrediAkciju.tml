@@ -1,0 +1,9 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd">
+	<body>
+	
+		<t:zone t:id="zone">
+		<t:beaneditform t:id="akcije" object="akcije" />
+	<t:pagelink page="PrikazAkcija">Prikaz Akcija</t:pagelink>
+	</t:zone>
+	</body>
+</html>

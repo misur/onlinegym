@@ -1,0 +1,17 @@
+<html  xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"> 
+	<h>
+		<b>Add Trainer</b></h>
+<body>
+
+	<t:zone t:id="zone">
+		
+		
+		<t:beaneditform t:id="trainer" object="trainer" submitLabel="CreateTrainer"/>
+	  <p>
+        [
+         <t:pagelink page="Index">Index</t:pagelink>
+        ]
+        </p>
+	</t:zone>
+</body>
+</html>

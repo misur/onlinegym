@@ -1,0 +1,16 @@
+<html  xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"> 
+<body>
+	<t:zone t:id="zone">
+		<t:beaneditform t:id="user" object="user" />
+
+	</t:zone>
+	
+	<sidebar>
+         <p>
+        [
+         <t:pagelink page="BrowseUser">Browse Users</t:pagelink>
+        ]
+        </p>
+    </sidebar>
+</body>
+</html>

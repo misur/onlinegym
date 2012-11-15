@@ -1,0 +1,41 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd">
+	<body>
+		<t:zone id="zone">
+			<table border="3px">
+				<p>Akcije</p>
+				<t:loop source="akcijeLista" value="akcije">
+					<tr>
+						<td>
+							${akcije.nazivAkcije}
+						</td>
+
+						<td>
+							${akcije.opisAkcije}
+						</td>
+
+						<td>
+							${akcije.brLjudi}
+						</td>
+
+						<td>
+							${akcije.start}
+						</td>
+
+						<td>
+							${akcije.end}
+						</td>
+						
+						<td>
+							<t:pagelink page="UrediAkciju">Uredi Akciju</t:pagelink>
+						</td>
+						
+					</tr>
+					<br />
+				</t:loop>
+
+			</table>
+		</t:zone>
+		
+	</body>
+	<t:pagelink page="DodajAkciju">Dodaj Akciju </t:pagelink>
+</html>

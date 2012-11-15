@@ -1,0 +1,13 @@
+<html  xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"> 
+<body>
+	
+	<t:zone t:id="zone">
+		<t:beaneditform t:id="user" object="user" submitLabel="CreateAccount"/>
+	  <p>
+        [
+         <t:pagelink page="Index">Index</t:pagelink>
+        ]
+        </p>
+	</t:zone>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html  xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"> 
+
+	
+	<t:zone t:id="zone">
+		<t:grid source="trainers" row="trainer"  add="Edit, Delete">
+		<p:editcell>
+				<t:pagelink page="EditTrainer" context="trainer.id">Edit
+				</t:pagelink>
+			</p:editcell>
+			<p:deletecell>
+				<t:actionlink t:id="delete" context="trainer.id">Delete
+				</t:actionlink>
+			</p:deletecell>
+			<p:empty>
+				<p>
+					There are no users to display you can
+					<t:pagelink page="AddTrainer">
+						add some
+					</t:pagelink>
+					.
+				</p>
+			</p:empty>
+		</t:grid>
+	</t:zone>
+
+	<p:sidebar>
+		<p>
+			[
+			<t:pagelink page="AddTrainer">Add Trainer</t:pagelink>
+			]
+		</p>
+	</p:sidebar>
+</html>

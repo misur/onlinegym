@@ -1,0 +1,22 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd">
+	<body>
+
+
+		<h1>Login</h1>
+		<t:zone t:id="zone">
+
+
+			<t:if test="userExists">
+				<t:pagelink page="Index">${user.name}</t:pagelink>
+
+
+
+			</t:if>
+
+
+			<t:beaneditform t:id="beanUser" object="beanUser"
+				submitLabel="Login" exclude="name" />
+			<t:pagelink page="Index">[Index]</t:pagelink>
+		</t:zone>
+	</body>
+</html>
